@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    font-family: "Overpass";
+}
+p {
+    font-size: 15px;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+.container {
+    background-color: hsl(213, 19%, 18%);
+    margin: auto 20px;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+.container.one.hidden {
+    display: none;
+}
+.star {
+    background-color: hsla(217, 12%, 63%, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+.text {
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+.rate-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.rate {
+    color: hsl(216, 12%, 54%);
+    padding: 10px 15px;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    border-radius: 50%;
+    font-weight: 700;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+.rate:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.rate.clicked {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+.submit {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transform: translateY(0.1em);
+}
+
+
+.container.two {
+    text-align: center;
+}
+.container.two .selected {
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(217, 12%, 63%, 0.1);
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 20px 30px;
+}
+.container.two .appr {
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 10px;
+}
+.container.two.hidden {
+    display: none;
+}
